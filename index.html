@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>糖果投掷</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <h1>糖果投掷</h1>
+        <p class="tagline">瞄準投擲 · 連擊積分</p>
+      </header>
+
+      <section class="meter" aria-label="對局狀態">
+        <div class="meter-item">
+          <span class="label">分數</span>
+          <strong id="score">0</strong>
+        </div>
+      </section>
+
+      <p id="status" class="status" role="status">點擊滑動投擲糖果進桶</p>
+
+      <div class="stage">
+        <canvas id="game" width="360" height="480"></canvas>
+      </div>
+
+      <div class="controls">
+        <button type="button" id="btn-restart">再來一局</button>
+      </div>
+
+      <details class="rules">
+        <summary>怎麼玩</summary>
+        <ul>
+          <li>拖曳滑動對準投擲，糖果進桶得分。</li>
+          <li>連續投中會加速加分。</li>
+          <li>純前端 Playgrounds SAM，適配手機觸控。</li>
+        </ul>
+      </details>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
