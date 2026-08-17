@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "rev": "b87a484",
+  "files": [
+    "app.js",
+    "game.js",
+    "index.html",
+    "styles.css"
+  ]
+}
